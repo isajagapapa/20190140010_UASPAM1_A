@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/islam" android:title="Islam"/>
+    <item android:id="@+id/kristen" android:title="Kristen"/>
+    <item android:id="@+id/katolik" android:title="Katolik"/>
+    <item android:id="@+id/hindu" android:title="Hindu"/>
+    <item android:id="@+id/budha" android:title="Budha"/>
+    <item android:id="@+id/konghucu" android:title="Konghucu"/>
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.garisstudio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".App.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/is1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/is1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GarisStudio">
+        <activity android:name=".EditDataGajiKaryawan"
+            android:parentActivityName=".DtGajiKaryawan"/>
+        <activity android:name=".TambahDataGajiKaryawan"
+            android:parentActivityName=".DtGajiKaryawan"/>
+        <activity android:name=".EditDataPekerjaan"
+            android:parentActivityName=".DtPekerjaan"/>
+        <activity android:name=".DtGajiKaryawan"
+            android:parentActivityName=".HomeAdmin"/>
+        <activity android:name=".EditDataKaryawan"
+            android:parentActivityName=".DtKaryawan"/>
+        <activity android:name=".DetailPekerjaan"
+            android:parentActivityName=".DtPekerjaan"/>
+        <activity android:name=".DetailKaryawan"
+            android:parentActivityName=".DtKaryawan"/>
+        <activity android:name=".TambahDataPekerjaan"
+            android:parentActivityName=".DtPekerjaan"/>
+        <activity android:name=".TambahDataKaryawan"
+            android:parentActivityName=".DtKaryawan"/>
+        <activity android:name=".DtPekerjaan"
+            android:parentActivityName=".HomeAdmin"/>
+        <activity android:name=".DtKaryawan"
+            android:parentActivityName=".HomeAdmin"/>
+        <activity
+            android:name=".HomeKaryawan"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".HomeAdmin"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".LoginAdmin"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

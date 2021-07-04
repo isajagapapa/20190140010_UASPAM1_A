@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginAdmin">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgbirumdb" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_weight="1"
+            android:background="@drawable/bglogin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeadAdm"
+        app:layout_constraintVertical_bias="0.8">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="240dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/grs" />
+
+        <EditText
+            android:id="@+id/EtIDAdm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgwhiteet"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="ID Admin"
+            android:paddingLeft="20dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/birumd1"
+            android:textSize="15dp"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/EtPwAdm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgwhiteet"
+            android:drawablePadding="500dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:paddingLeft="20dp"
+            android:shadowColor="@color/biru"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/birumd1"
+            android:textSize="15dp"
+            tools:ignore="RtlCompat" />
+
+        <CheckBox
+            android:id="@+id/cbxShowAdm"
+            android:layout_width="354dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Lihat Password"
+            android:textColor="@color/biru" />
+
+        <Button
+            android:id="@+id/btnLoginAdm"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgbiru"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="LOGIN"
+            android:textStyle="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HeadAdm"
+        android:layout_width="417dp"
+        android:layout_height="212dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <TextView
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Selamat Datang,"
+            android:textAllCaps="true"
+            android:textColor="@color/biru"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Silakan login untuk melanjutkan sebagai Admin."
+            android:textColor="@color/biru" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

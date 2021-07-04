@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahDataGajiKaryawan">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Tanggal"
+        android:textColor="@color/biru"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtTanggalGajiTambah"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dropshadow"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/birumd1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Nomor Induk Karyawan"
+        android:textColor="@color/biru"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/EtNikGajiTambah"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EtNikGajiTambah"
+        app:layout_constraintTop_toBottomOf="@+id/EtTanggalGajiTambah" />
+
+    <EditText
+        android:id="@+id/EtNikGajiTambah"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dropshadow"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/birumd1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/dateImgTmbh"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintEnd_toEndOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="@+id/EtTanggalGajiTambah"
+        app:layout_constraintTop_toTopOf="@+id/EtTanggalGajiTambah"
+        app:srcCompat="@drawable/date_range_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/btnSimpanTambahGaji"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="448dp"
+        android:background="@drawable/bgbiru"
+        android:fontFamily="@font/montserrat"
+        android:text="Simpan"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EtNikGajiTambah"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/EtNikGajiTambah"
+        app:layout_constraintTop_toBottomOf="@+id/EtNikGajiTambah"
+        app:layout_constraintVertical_bias="0.733"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
