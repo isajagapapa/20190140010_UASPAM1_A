@@ -1,5 +1,6 @@
 package com.example.garisstudio.database;
 
+//Model data karyawan untuk set dan get
 public class Karyawan {
     String nik, password, nama, alamat, jenis_kelamin, agama, pendidikan_terakhir, jabatan;
 

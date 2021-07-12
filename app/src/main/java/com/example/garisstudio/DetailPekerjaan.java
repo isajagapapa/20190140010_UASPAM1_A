@@ -12,16 +12,21 @@ import java.text.DecimalFormatSymbols;
 
 public class DetailPekerjaan extends AppCompatActivity {
 
+    //variabel untuk textview
     private TextView editJabatan,editGp, editTk, editTp, editTt, editTotal;
+    //variabel untuk string
     String jb, gp, tk,tp, tt, ttl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_pekerjaan);
+        //mengeeset judul/title dari activity detailkaryawan
         setTitle("Detail Data Pekerjaan");
+        //mengganti background pada action bar
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.biru)));
 
+        //set id untuk textview
         editJabatan = findViewById(R.id.tvNmJbt);
         editGp = findViewById(R.id.tvGajiPokok);
         editTk = findViewById(R.id.tvTK);
@@ -29,6 +34,7 @@ public class DetailPekerjaan extends AppCompatActivity {
         editTt = findViewById(R.id.tvTT);
         editTotal = findViewById(R.id.tvTotal);
 
+        //menyimpan data yang dikirim dari activity sebelumnya dengan kunci
         jb = getIntent().getStringExtra("jbt");
         gp = getIntent().getStringExtra("gjpk");
         tk = getIntent().getStringExtra("tk");
@@ -36,6 +42,7 @@ public class DetailPekerjaan extends AppCompatActivity {
         tt = getIntent().getStringExtra("tt");
         ttl = getIntent().getStringExtra("total");
 
+        //menamilkan value dari variabel string kedalam textview
         editJabatan.setText("Rp "+FormatAngka(gp));
         editGp.setText("Rp "+FormatAngka(gp));
         editTk.setText("Rp "+FormatAngka(tk));
@@ -44,6 +51,7 @@ public class DetailPekerjaan extends AppCompatActivity {
         editTotal.setText("TOTAL: Rp "+FormatAngka(ttl));
     }
 
+    // method untuk mengubah format decimal
     private static String FormatAngka(String angka){
         DecimalFormat decimalFormat = new DecimalFormat();
         DecimalFormat.getCurrencyInstance();

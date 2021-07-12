@@ -1,5 +1,6 @@
 package com.example.garisstudio.database;
 
+//Model data gaji untuk set dan get
 public class Gaji {
     String No_Gaji, tanggal_gaji, nik;
 

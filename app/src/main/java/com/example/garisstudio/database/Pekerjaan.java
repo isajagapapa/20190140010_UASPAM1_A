@@ -1,5 +1,6 @@
 package com.example.garisstudio.database;
 
+//Model data pekerjaan untuk set dan get
 public class Pekerjaan {
     String jabatan, gaji_pokok, tunjangan_kesehatan, tunjangan_pendidikan, tunjangan_transportasi, total_gaji;
 

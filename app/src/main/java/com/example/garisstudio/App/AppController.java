@@ -6,8 +6,9 @@ import android.text.TextUtils;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-
+//untuk mengatasi manakala membuat string request didalam adapter
 public class AppController extends Application {
+    //String tag untuk nama pendek dari kelas appcontroller
     public static final String TAG = AppController.class.getSimpleName();
 
     private RequestQueue mRequestQueue;

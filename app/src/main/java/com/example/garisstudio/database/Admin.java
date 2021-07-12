@@ -1,5 +1,6 @@
 package com.example.garisstudio.database;
 
+//Model data admin untuk set dan get
 public class Admin {
     String id_admin, password;
 

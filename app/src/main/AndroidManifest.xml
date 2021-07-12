@@ -36,9 +36,6 @@
         <activity android:name=".DtKaryawan"
             android:parentActivityName=".HomeAdmin"/>
         <activity
-            android:name=".HomeKaryawan"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
             android:name=".HomeAdmin"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
