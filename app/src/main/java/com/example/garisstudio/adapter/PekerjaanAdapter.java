@@ -172,7 +172,7 @@ public class PekerjaanAdapter extends RecyclerView.Adapter<PekerjaanAdapter.Peke
                 Intent intent = new Intent(v.getContext(), DetailPekerjaan.class);
                 //mengambil bundle kedalam intent untuk dikirim
                 intent.putExtras(bundle);
-                //berpindah dari karyawanadapter ke DetailPekerjaan
+                //berpindah dari pekerjaanadapter ke DetailPekerjaan
                 v.getContext().startActivity(intent);
             }
         });

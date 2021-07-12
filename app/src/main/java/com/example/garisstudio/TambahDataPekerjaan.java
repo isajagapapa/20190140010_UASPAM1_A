@@ -120,7 +120,6 @@ public class TambahDataPekerjaan extends AppCompatActivity {
                         success = jObj.getInt(TAG_SUCCES);
                         //pesan sukses
                         if (success == 1) {
-                            //pesan gagal
                             Toast.makeText(TambahDataPekerjaan.this, "Sukses menyimpan data", Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {
@@ -140,7 +139,7 @@ public class TambahDataPekerjaan extends AppCompatActivity {
                 protected Map<String,String> getParams(){
                     //membuat objek hashmap
                     Map<String,String> params = new HashMap<>();
-                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan parameter
+                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan value yang diambil gari edittext
                     params.put("jabatan",jbt);
                     params.put("gaji_pokok",gjpk);
                     params.put("tunjangan_kesehatan", tk);

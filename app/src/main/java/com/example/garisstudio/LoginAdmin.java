@@ -36,7 +36,7 @@ public class LoginAdmin extends AppCompatActivity {
 
     //String untuk alamat server, local host android
     private static String url_loginadm = "http://10.0.2.2/GarisStudio/loginadmin.php";
-    //String tag untuk nama pendek dari kelas EditDataPekerjaan
+    //String tag untuk nama pendek dari kelas LoginAdmin
     private static final String TAG = LoginAdmin.class.getSimpleName();
     //String tag untuk sukses
     private static final String TAG_SUCCES = "success";

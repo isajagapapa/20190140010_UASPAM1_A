@@ -150,7 +150,7 @@ public class TambahDataGajiKaryawan extends AppCompatActivity {
                 //mengirim data dalam bentuk array map
                 protected Map<String,String> getParams(){
                     Map<String,String> params = new HashMap<>();
-                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan parameter
+                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan value yang diambil gari edittext
                     params.put("tanggal_gaji",strtglgj);
                     params.put("nik",strnikgj);
 

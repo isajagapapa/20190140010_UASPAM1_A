@@ -211,7 +211,7 @@ public class TambahDataKaryawan extends AppCompatActivity {
                 protected Map<String,String> getParams(){
                     //membuat objek hashmap
                     Map<String,String> params = new HashMap<>();
-                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan parameter
+                    //memasukkan data sesuai nama kunci yaitu nama kolom pada tabel database dengan value yang diambil gari edittext
                     params.put("nik",nik);
                     params.put("password",pw);
                     params.put("nama", nama);
